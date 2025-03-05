@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh 'echo "Docker Push"'
                 sh 'echo "pushing docker image"'
-                sh 'docker push karthick0202/vignesh'
+                sh 'docker push karthick0202/vignesh:v2'
             }
     }
 }
