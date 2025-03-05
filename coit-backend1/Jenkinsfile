@@ -1,10 +1,12 @@
+@Library("my-shared-lib") _
 pipeline {
     agent any
 
     stages {
         stage('Build') {
             steps {
-                sh 'echo "mvn install"'
+                 demoShared()
+                //sh 'echo "mvn install"'
                 //sh 'cd coit-backend1 && mvn install'
             }
         }
